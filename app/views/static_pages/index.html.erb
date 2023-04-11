@@ -1,0 +1,19 @@
+<%= form_tag static_pages_path, method: :get do %>
+  <div class="field">
+    <%= label_tag "flickr_user_id", "Enter a flickr user id:" %>
+    <%= text_field_tag "flickr_user_id" %>
+  </div>
+
+  <div class="action">
+    <%= button_tag "Search", type: "Search" %>
+  </div>
+<% end %>
+
+<% unless @response.nil? %>
+  <h2>Photos of user:</h2>
+
+  <% @response.each do |photo| %>
+    <% photo_url = "https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>
+    <%= image_tag photo_url %>
+  <% end %>
+<% end %>
