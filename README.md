@@ -1,2 +1,2 @@
 # Description
-This project is part of [The Odin Project's curriculum](https://www.theodinproject.com/lessons/ruby-on-rails-flickr-api). The main focus of this project is to communicate with External API, which in this case is Flickr API.
+This project is part of [The Odin Project's curriculum](https://www.theodinproject.com/lessons/ruby-on-rails-flickr-api). The main focus of this project is to communicate with External API, which in this case is Flickr API. This application features a single homepage that allows users to enter the user ID of their choice, so they can quickly and effortlessly view that user's  photos.
